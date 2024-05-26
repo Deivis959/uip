@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Catalogo from './pages/catalogo';
-import NoPage from './pages/noPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +11,6 @@ root.render(
       <Routes>
           <Route path="/" element={<App />} />
           <Route path="/catalogo" element={<Catalogo />} />
-          <Route path="*" element={<NoPage />} />
       </Routes>
   </BrowserRouter>
 );
